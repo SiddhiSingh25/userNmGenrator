@@ -104,7 +104,7 @@ function Form() {
                 className="w-full sm:w-96 px-3 py-2.5 rounded-[15px]"
             >
                 <option value="" disabled>
-                    Select Gender
+                  Select Gender
                 </option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -114,14 +114,14 @@ function Form() {
             <br />
             <input
                 type="submit"
-                className="bg-black text-white mt-2 px-5 py-1.5 rounded-[8px]"
+                className="bg-black shadow-none text-white mt-2 px-5 py-1.5 rounded-[8px]"
             />
             <br />
             <br />
             <ul>
             {
                                 users.map((item, index) => (
-                                    <div key={index} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div key={index} className="grid grid-cols-1 sm:grid-cols-2 min-w-96 md:grid-cols-3 gap-4">
                                         <div className="mini" onClick={() => handleClick(0 + item.bDate.charAt(0) + "._" + item.firstName.charAt(0).toUpperCase() + item.firstName.slice(1).toLowerCase())}>
                                             <li>{0 + item.bDate.charAt(0) + "._" + item.firstName.charAt(0).toUpperCase() + item.firstName.slice(1).toLowerCase()}</li>
                                         </div>
